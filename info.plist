@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.danphilibin.alfred-readwise</string>
+	<key>connections</key>
+	<dict>
+		<key>16039760-F173-4AB8-9C73-DA7401D5DE23</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DDA3767F-3941-449C-AFBC-487AD8F6405A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>25580E64-2C8E-4634-91E3-C971577C3D54</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3049DA70-19C7-492E-B0A9-FBA6EC95B819</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2C99F6F1-EF16-4CF1-9762-5D05A1FFAA4D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>25580E64-2C8E-4634-91E3-C971577C3D54</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3049DA70-19C7-492E-B0A9-FBA6EC95B819</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B14F1532-CD50-4063-8D80-EB14EEEE0366</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4B02EE91-500C-45C2-B0A7-9FFEDA48F1C3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8ABAB4AA-D75C-4814-8947-7693A1A270E1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8CAA19FA-F7A8-4D2D-9FD9-6BBD87E1B850</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>16039760-F173-4AB8-9C73-DA7401D5DE23</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B14F1532-CD50-4063-8D80-EB14EEEE0366</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8CAA19FA-F7A8-4D2D-9FD9-6BBD87E1B850</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Dan Philibin</string>
+	<key>description</key>
+	<string>Saves highlights to Readwise.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Add to Readwise</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>https://readwise.io/dailyreview</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>8ABAB4AA-D75C-4814-8947-7693A1A270E1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>rw review</string>
+				<key>subtext</key>
+				<string></string>
+				<key>text</key>
+				<string>Readwise Daily Review</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>4B02EE91-500C-45C2-B0A7-9FFEDA48F1C3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{var:url}</string>
+				<key>title</key>
+				<string>Highlight Saved to Readwise</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>DDA3767F-3941-449C-AFBC-487AD8F6405A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>applescript</key>
+				<string>on alfred_script(q)
+  tell application "System Events" to set frontApp to name of first process whose frontmost is true
+
+if (frontApp = "Safari") or (frontApp = "Safari Technology Preview") or (frontApp = "Webkit") then
+  using terms from application "Safari"
+    tell application frontApp to set currentTabUrl to URL of front document
+  end using terms from
+
+else if (frontApp = "Google Chrome") or (frontApp = "Google Chrome Canary") or (frontApp = "Chromium") then
+  using terms from application "Google Chrome"
+    tell application frontApp to set currentTabUrl to URL of active tab of front window
+  end using terms from
+
+else if (frontApp = "Opera") then
+	tell application "System Events"	tell application process "Opera" to set currentTabUrl to value of text field "Address field" of toolbar 1 of (first window whose subrole is "AXStandardWindow")end tell
+
+else
+  return "You need a supported browser as your frontmost app"
+end if
+
+return currentTabUrl
+
+end alfred_script</string>
+				<key>cachescript</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.applescript</string>
+			<key>uid</key>
+			<string>B14F1532-CD50-4063-8D80-EB14EEEE0366</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>rw</string>
+				<key>subtext</key>
+				<string>Paste the text you'd like to save as a highlight.</string>
+				<key>text</key>
+				<string>Add highlight to Readwise</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>2C99F6F1-EF16-4CF1-9762-5D05A1FFAA4D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>curl -d '{"highlights":[{"text":"'$text'", "source_url":"'$url'"}]}' -H "Content-Type: application/json" -H "Authorization:Token $api_key" -X POST https://readwise.io/api/v2/highlights/</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>16039760-F173-4AB8-9C73-DA7401D5DE23</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>"</string>
+				<key>replacestring</key>
+				<string>\"</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>25580E64-2C8E-4634-91E3-C971577C3D54</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>url</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>8CAA19FA-F7A8-4D2D-9FD9-6BBD87E1B850</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>text</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>3049DA70-19C7-492E-B0A9-FBA6EC95B819</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>This workflow saves a highlight to Readwise (https://readwise.io) with the URL of the frontmost browser window as the source.
+
+## Installation
+
+1. Sign up for a Readwise account: https://readwise.io
+2. Get your API key: https://readwise.io/access_token
+3. Copy &amp; paste your API key into the `api_key` workflow variable
+4. Done!
+
+## Usage
+
+Type "rw" (or set your own custom trigger) and paste the text you want to save as a highlight. The extension will grab the URL from your frontmost browser window, save the highlight to Readwise, and post a notification when finished.
+
+You can also type "rw review" to open your Daily Review screen.
+
+Safari and Google Chrome are supported.
+
+## Acknowledgements
+- The Copy URL workflow by fallroot: https://github.com/fallroot/copy-url-for-alfred
+- This gist for getting the title and URL from your browser: https://gist.github.com/vitorgalvao/5392178</string>
+	<key>uidata</key>
+	<dict>
+		<key>16039760-F173-4AB8-9C73-DA7401D5DE23</key>
+		<dict>
+			<key>xpos</key>
+			<integer>720</integer>
+			<key>ypos</key>
+			<integer>360</integer>
+		</dict>
+		<key>25580E64-2C8E-4634-91E3-C971577C3D54</key>
+		<dict>
+			<key>xpos</key>
+			<integer>225</integer>
+			<key>ypos</key>
+			<integer>390</integer>
+		</dict>
+		<key>2C99F6F1-EF16-4CF1-9762-5D05A1FFAA4D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>360</integer>
+		</dict>
+		<key>3049DA70-19C7-492E-B0A9-FBA6EC95B819</key>
+		<dict>
+			<key>xpos</key>
+			<integer>335</integer>
+			<key>ypos</key>
+			<integer>390</integer>
+		</dict>
+		<key>4B02EE91-500C-45C2-B0A7-9FFEDA48F1C3</key>
+		<dict>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>235</integer>
+		</dict>
+		<key>8ABAB4AA-D75C-4814-8947-7693A1A270E1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>225</integer>
+			<key>ypos</key>
+			<integer>235</integer>
+		</dict>
+		<key>8CAA19FA-F7A8-4D2D-9FD9-6BBD87E1B850</key>
+		<dict>
+			<key>xpos</key>
+			<integer>620</integer>
+			<key>ypos</key>
+			<integer>390</integer>
+		</dict>
+		<key>B14F1532-CD50-4063-8D80-EB14EEEE0366</key>
+		<dict>
+			<key>note</key>
+			<string>get URL from frontmost browser</string>
+			<key>xpos</key>
+			<integer>440</integer>
+			<key>ypos</key>
+			<integer>360</integer>
+		</dict>
+		<key>DDA3767F-3941-449C-AFBC-487AD8F6405A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>920</integer>
+			<key>ypos</key>
+			<integer>360</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>api_key</key>
+		<string>iwosWuvp3T4WKqokwxH4p2NItXSidZd20IcTufJc8YpVbjv0Go</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array>
+		<string>api_key</string>
+	</array>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
