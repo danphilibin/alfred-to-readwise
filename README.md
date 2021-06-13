@@ -1,5 +1,5 @@
-# alfred-to-readwise
-This workflow saves a highlight to [Readwise](https://readwise.io) with the URL of the frontmost browser window as the source.
+# Alfred to Readwise
+This [Alfred](https://www.alfredapp.com) workflow saves a highlight to [Readwise](https://readwise.io) with the URL of the frontmost browser window as the source.
 
 ## Installation
 
