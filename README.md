@@ -19,5 +19,5 @@ You can also type "rw review" to open your Daily Review screen.
 Safari and Google Chrome are supported.
 
 ## Acknowledgements
-- The Copy URL workflow by fallroot: https://github.com/fallroot/copy-url-for-alfred
-- This gist for getting the title and URL from your browser: https://gist.github.com/vitorgalvao/5392178
+- The [Copy URL](https://github.com/fallroot/copy-url-for-alfred) workflow by fallroot
+- [This gist](https://gist.github.com/vitorgalvao/5392178) for getting the title and URL from your browser
